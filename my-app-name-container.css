@@ -1,3 +1,30 @@
+.my-app-name-container h1 small,
+.my-app-name-container h2 small,
+.my-app-name-container h3 small,
+.my-app-name-container h4 small,
+.my-app-name-container h5 small,
+.my-app-name-container h6 small,
+.my-app-name-container .h1 small,
+.my-app-name-container .h2 small,
+.my-app-name-container .h3 small,
+.my-app-name-container .h4 small,
+.my-app-name-container .h5 small,
+.my-app-name-container .h6 small,
+.my-app-name-container h1 .small,
+.my-app-name-container h2 .small,
+.my-app-name-container h3 .small,
+.my-app-name-container h4 .small,
+.my-app-name-container h5 .small,
+.my-app-name-container h6 .small,
+.my-app-name-container .h1 .small,
+.my-app-name-container .h2 .small,
+.my-app-name-container .h3 .small,
+.my-app-name-container .h4 .small,
+.my-app-name-container .h5 .small,
+.my-app-name-container .h6 .small {
+  color: #9D9D9D;
+}
+
 .my-app-name-container .btn {
   border: none;
   border-radius: 0;
@@ -26,10 +53,12 @@
 /* class btn-primary */
 .my-app-name-container .btn-primary {
   border: none;
+   background-color: #3F51B5;
 }
 .my-app-name-container .btn-primary:focus,
 .my-app-name-container .btn-primary.focus {
   border: none;
+  background-color: #4E97D7;
 }
 .my-app-name-container .btn-primary:hover {
   background-color: #4E97D7;
@@ -55,6 +84,7 @@
   background-color: #E6E6E6;
 }
 .my-app-name-container .btn-default:hover {
+  background-color: #CCCCCC;
   box-shadow: 0 5px 5px rgba(0,0,0,0.5); /* button shadow */
 }
 .my-app-name-container .btn-default:active,
@@ -81,15 +111,15 @@
 }
 .my-app-name-container .btn-success:focus,
 .my-app-name-container .btn-success.focus {
-  background-color: #81C784;
+  background-color: #71C174;
 }
 .my-app-name-container .btn-success:hover {
-  background-color: #66BB6A;
+  background-color: #5FB962;
 }
 .my-app-name-container .btn-success:active,
 .my-app-name-container .btn-success.active,
 .my-app-name-container .open > .dropdown-toggle.btn-success {
-  background-color: #70C270;
+  background-color: #95D097;
 }
 .my-app-name-container .btn-success:active:hover,
 .my-app-name-container .btn-success.active:hover,
@@ -100,7 +130,7 @@
 .my-app-name-container .btn-success:active.focus,
 .my-app-name-container .btn-success.active.focus,
 .my-app-name-container .open > .dropdown-toggle.btn-success.focus {
-  background-color: #5EBA5E;
+  background-color: #83C985;
 }
 .my-app-name-container .btn-success:active,
 .my-app-name-container .btn-success.active,
@@ -116,7 +146,7 @@
 .my-app-name-container .btn-success.disabled.focus,
 .my-app-name-container .btn-success[disabled].focus,
 .my-app-name-container fieldset[disabled] .btn-success.focus {
-  background-color: #5CB85C;
+  background-color: #95D097;
 }
 
 /* class btn-info */
@@ -155,7 +185,7 @@
   box-shadow: 0 5px 5px rgba(0,0,0,0.5); /* button shadow */
 }
 
-/* class btn-info */
+/* class btn-warning */
 .my-app-name-container .btn-warning {
   background-color: #FF9800;
 }
@@ -249,6 +279,11 @@
   border-bottom-right-radius: 0;
 }
 
+/* my-pagination */
+.my-app-name-container .my-pagination {
+  font-family: Helvetica, FontAwesome;
+} 
+
 /* table */
 .my-app-name-container .table {
   box-shadow: 0 3px 3px rgba(0,0,0,0.5); /* shadow */
@@ -258,7 +293,7 @@
   border: none;
 }
 .my-app-name-container .table tr:hover {
-  background-color: #e6c498;
+  background-color: #EBD0AD;
 }
 
 /* panel */
@@ -363,12 +398,14 @@
 /* form-control */
 .my-app-name-container .form-control {
  border: none;
- border-bottom: 1px solid #CCC;
+ height: 33px;
+ border-bottom: 2px solid #03588C;
   border-radius: 0;
   box-shadow: 0 2px 2px rgba(0,0,0,0.5); /* shadow */
 }
 .my-app-name-container .form-control:focus {
-  border-bottom: 1px solid #848484;
+  height: 33px;
+  border-bottom: 2px solid #218DA6;
   background-color: #F2F2F2;
   -webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.5);
           box-shadow: 0 4px 4px rgba(0,0,0,0.5);
@@ -407,11 +444,134 @@
   background-color: #03588C;
 }
 
-/* Buttom image temporary fix */
-.my-app-name-container btn a {
-  color: inherit;
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+  }
 }
-.my-app-name-container btn  a:hover,
-.my-app-name-container btn a:focus {
-  color: inherit;
+
+/* navbar-default */
+.my-app-name-container .navbar-default {
+  border-color: transparent;
+}
+
+.my-app-name-container .navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.my-app-name-container .navbar-default .navbar-toggle:hover,
+.my-app-name-container .navbar-default .navbar-toggle:focus {
+  background-color: #046DAF;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5); /* button shadow */
+}
+
+.my-app-name-container .navbar-default .navbar-nav > .active > a,
+.my-app-name-container .navbar-default .navbar-nav > .active > a:hover,
+.my-app-name-container .navbar-default .navbar-nav > .active > a:focus {
+  color: #9999FF;
+  background-color: #E7E7E7;
+}
+
+/* navbar-nav */
+.my-app-name-container .navbar-default .navbar-nav > li > a {
+  color: #CCCCFF;
+}
+.my-app-name-container .navbar-default .navbar-nav > li > a:hover {
+  color: #FFFFFF;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5); /* button shadow */
+  background-color: #046DAF;
+}
+.my-app-name-container .navbar-default .navbar-nav > li > a:active {
+  color: #FFFFFF;
+  box-shadow: 0 7px 7px rgba(0,0,0,0.5); /* button shadow */
+  background-color: #047DCpull8;
+}
+
+.my-app-name-container .navbar-text.navbar-right a {
+  color: #9d9496;
+  cursor: pointer;
+  text-decoration: none;
+}
+.my-app-name-container .navbar-text.navbar-right a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.my-app-name-container .navbar-text.navbar-right a:active  {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* navbar-toggle */
+.my-app-name-container .navbar-toggle {
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.my-app-name-container .navbar-toggle:focus {
+  background-color: inherit;
+}
+
+/* navbar-inverse */
+
+.my-app-name-container .navbar-inverse {
+  border-color: transparent;
+}
+.my-app-name-container .navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+.my-app-name-container .navbar-inverse .navbar-toggle:hover,
+.my-app-name-container .navbar-inverse .navbar-toggle:focus {
+  background-color: #046DAF;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5); /* button shadow */
+}
+
+.my-app-name-container .navbar-inverse .navbar-collapse,
+.my-app-name-container .navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+.my-app-name-container .navbar-inverse .navbar-nav > .open > a,
+.my-app-name-container .navbar-inverse .navbar-nav > .open > a:hover,
+.my-app-name-container .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: inherit;
+}
+
+.my-app-name-container a:focus {
+  outline: none;
+}
+
+/* header navbar */
+.my-app-name-container .nav.navbar-nav.navbar-right li {
+  border-bottom: 4px solid transparent;
+}
+.my-app-name-container .nav.navbar-nav.navbar-right li:hover {
+  border-bottom: 4px solid #FFFFFF;
+}
+.my-app-name-container .row.hidden-xs .nav.navbar-nav.navbar-right li:hover {
+  border-bottom: 4px solid #FFFFFF;
+}
+.my-app-name-container header {
+  box-shadow: 0 3px 3px rgba (0,0,0,0.5);
+}
+
+/* form-control background */
+.my-app-name-container .form-control[disabled],
+.my-app-name-container .form-control[readonly],
+.my-app-name-container fieldset[disabled] .form-control {
+  background-color: #FFFFFF;
+}
+.my-app-name-container .form-control[disabled],
+.my-app-name-container fieldset[disabled] .form-control {
+  cursor: default;
+}
+
+/* form-control input-group */
+@-moz-document url-prefix() {
+ .my-app-name-container .input-group-btn .form-control {
+  width: 160px;
+ }
+}
+
+/* Panel heading students background */
+.my-app-name-container .panel-heading .row {
+  margin-top: 20px;
 }
