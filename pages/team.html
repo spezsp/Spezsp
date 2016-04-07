@@ -1,0 +1,11 @@
+<div class="main-container">
+	<div class="team-list">
+		<div ng-repeat="player in team.players" class="player-info">
+			<span class="name">Name: </span><span class="name-data">{{player.name}}</span><br>
+			<span class="name">Date of birth: </span><span class="name-data">{{player.date}}</span><br>
+			<span class="name">Position: </span><span class="name-data">{{player.position}}</span><br>
+			<span class="name">Number: </span><span class="name-data">{{player.number}}</span><img ng-src="{{player.flag}}" class="player-flag" title="{{player.country}}">
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>

@@ -1,0 +1,107 @@
+body {
+	background-image: url(../img/cfc_lions_tails.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+}
+header .navbar {
+	border-radius: 0;
+	border: transparent;
+	margin-bottom: 0;
+}
+header .navbar-header {
+	background-image: url(../img/chelsea_logo.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: transparent;
+}
+header .navbar-collapse {
+	border: transparent;
+}
+
+header .navbar-header a {
+	display: block;
+	opacity:0;
+}
+header .icon-bar {
+	color: #FFFFFF;
+}
+
+header .navbar-toggle {
+	border: transparent;
+	border-bottom: 4px solid transparent;
+	border-radius: 0;
+}
+header .navbar-toggle.collapsed,
+header .navbar-toggle:active {
+	border-bottom: 4px solid transparent;
+}
+header .navbar-default {
+	background-color: transparent;
+}
+header .navbar-default .navbar-nav > li > a {
+	font-weight: 900;
+	font-size: 1.4em;
+	border-bottom: 4px solid transparent;
+}
+header .navbar-default .navbar-nav > li > a {
+	color: #FFFFFF;
+}
+header .navbar-header .navbar-toggle.collapsed span {
+	color: #FFFFFF;	
+}
+header .navbar-default .navbar-nav > li > a:hover,
+header .navbar-default .navbar-nav > li > a:visited,
+header .navbar-default .container-fluid .navbar-toggle:hover,
+header .navbar-default .container-fluid .navbar-toggle:focus {
+	color: #FFFFFF;
+	border-bottom: 4px solid #FFFFFF;
+	background-color: transparent;
+}
+header .navbar-default .navbar-nav li a {
+	outline: none;
+}
+header .navbar-default .container-fluid .navbar-toggle .icon-bar {
+	background-color: #FFFFFF;
+}
+.history {
+	color: transparent;
+}
+.main-container {
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 700px;
+	background-size: contain;
+}
+.about {
+	margin: 0 40px;
+}
+footer {
+	position: relative;
+}
+/* team*/
+.team-list {
+	margin: 20px 40px;
+	padding: 0;
+}
+.player-info {
+	position: relative;
+	float: left;
+	width: 220px;
+	height: 100px;
+	margin: 20px 40px;
+}
+.player-info .name-data:nth-child(2) {
+	font-size: 1.4em;
+}
+.name-data {
+	font-weight: 900;
+	font-size: 1.2em;
+}
+.player-flag {
+	display: inline-block;
+	float: right;
+	margin: 0 auto;
+	border: 1px solid #FFFFFF;
+}
+
