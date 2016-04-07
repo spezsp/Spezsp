@@ -1,4 +1,5 @@
-angular.module("myApp")
+angular
+.module("myApp")
 .controller("teamController", function() {
 	var vm = this;
 	vm.players = [
