@@ -72,6 +72,7 @@ header .navbar-default .container-fluid .navbar-toggle .icon-bar {
 	max-width: 1000px;
 	min-width: 700px;
 	background-size: contain;
+	min-height: 800px;
 }
 .about {
 	margin: 0 40px;
@@ -105,3 +106,10 @@ footer {
 	border: 1px solid #FFFFFF;
 }
 
+.main-container .carousel-indicators {
+	top: 400px;
+}
+.main-container .carousel-caption {
+	position: absolute;
+	top: 330px;
+}

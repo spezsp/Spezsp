@@ -1,22 +1,25 @@
 (function(){
-    "use strict";
+	"use strict";
 
-    angular
-    	.module("myApp")
-		.controller("galleryController", galleryController);
+angular
+.module("myApp").controller("galleryController", function ($scope) {
+	var vm = this;
+	$scope.myInterval = 3000;
+	$scope.noWrapSlides = false;
+	$scope.active = 0;
+	var slides = $scope.slides = [];
+	var currIndex = 0;
 
-	function galleryController() {
-        var vm = this;
-        vm.myInterval = 2000;
-        vm.noWrapSlides = false;
-        vm.slides = addSlide();
+	$scope.addSlide = function() {
+		slides.push({
+		image : "img/team_photo/img_"+slides.length+".jpg",
+		text : ["Gary Cahill","Thibaut Courtois","César Azpilicueta","Asmir Begovic","Baba Rahman","Kurt Zouma","John Terry","Branislav Ivanovic","Eden Hazard","Cesc Fàbregas","Nemanja Matic","John Mikel Obi","Oscar","Pedro","Willian","Kenedy","Diego Costa","Loïc Remy"][slides.length % 18],
+		id : currIndex++
+		});
+	};
 
-		function addSlide() {
-  			var slides = []
-			for (var i = 1; i <= 4; i++) {
-			slides.push({image : "img/team_photo/img_" + i + ".jpg"});
-				};
-				return slides;
-			};
-		};
+	for (var i = 0; i < 18; i++) {
+		$scope.addSlide();
+		}
+	});
 })();

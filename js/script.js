@@ -1,7 +1,7 @@
 (function () {
 	"use strict";
 
-	angular.module("myApp", ["ui.router", "ngAnimate", "ui.bootstrap"])
+	angular.module("myApp", ["ui.router", "ngAnimate", "ui.bootstrap", "ui.bootstrap.carousel"])
 		.config(configApp);
 
 		configApp.$inject = ["$stateProvider", "$urlRouterProvider"];
