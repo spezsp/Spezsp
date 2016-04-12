@@ -3,7 +3,6 @@
 
 angular
 .module("myApp").controller("galleryController", function ($scope) {
-	var vm = this;
 	$scope.myInterval = 3000;
 	$scope.noWrapSlides = false;
 	$scope.active = 0;

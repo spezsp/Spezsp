@@ -68,11 +68,24 @@ header .navbar-default .container-fluid .navbar-toggle .icon-bar {
 	color: transparent;
 }
 .main-container {
-	margin: 0 auto;
+	margin: 40px auto;
 	max-width: 1000px;
 	min-width: 700px;
 	background-size: contain;
-	min-height: 800px;
+	min-height: 600px;
+}
+.main-container .btn,
+.main-container .well
+{
+	border-radius: 0;
+}
+.main-container .btn:active, 
+.main-container .btn:hover
+{
+	outline: none;
+}
+.main-container .well {
+	background-color: #0404B4;
 }
 .about {
 	margin: 0 40px;
@@ -105,7 +118,7 @@ footer {
 	margin: 0 auto;
 	border: 1px solid #FFFFFF;
 }
-
+/* gallery*/
 .main-container .carousel-indicators {
 	top: 400px;
 }
@@ -113,3 +126,114 @@ footer {
 	position: absolute;
 	top: 330px;
 }
+/* footer */
+footer {
+	margin-top: 40px;
+	height: 150px;
+}
+.footer-group {
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 700px;
+	height: 100px;
+}
+.social {
+	width: 306px;
+	height: 40px;
+	margin: 0 auto;
+}
+.facebook, .twittwer, .i-gram, .utube {
+	border: 1px solid transparent;
+	background-color: #FFFFFF;
+	height: 34px;
+	width: 34px;
+	margin: 2px 0 0 34px;
+	float: left;
+}
+.footer-group a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+.social a:hover {
+	opacity: 0.7;
+}
+.facebook a {
+	background-image: url(../img/facebook.png);
+}
+.twittwer a {
+	background-image: url(../img/twitter.png);
+}
+.i-gram a {
+	background-image: url(../img/i-gram.png);
+}
+.utube a {
+	background-image: url(../img/utube.png);
+}
+.sponsors {
+	height: 110px;
+	width: 100%;
+}
+.yokohama {
+	margin-left: 30%;
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+.yokohama a {
+	background-image: url(../img/yokohama.png);
+	background-position: right;
+}
+.adidas {
+	width: 20%;
+	margin-right: 30%;
+	height: 100%;
+	float: right;
+}
+.adidas a {
+	background-image: url(../img/adidas.png);
+	background-position: left;
+}
+.address {
+	font-style: italic;
+	white-space: pre;
+	font-size: 1.2em;
+}
+.address span:last-child {
+	font-weight: 800;
+	font-size: 1.2em;
+}
+.general {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.personnel-data {
+	width: 28%;
+	float: left;
+	margin-left: 5%;
+}
+.personnel div:first-child {
+	margin-left: 2%;
+}
+.personnel img {
+	width: 100%;
+	height: 100%;
+}
+.full-name, .personnel-position
+{
+	padding: 10px 10px 0 10px;
+}
+
+.full-name
+{
+	font-weight: 900;
+	font-size: 1.4em;
+}
+.personnel-position {
+	font-style: italic;
+	padding-top: 0;
+}
+
+	

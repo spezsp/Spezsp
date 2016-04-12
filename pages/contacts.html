@@ -1,3 +1,32 @@
 <div class="main-container">
-	<span>contacns</span>
+	<div class="address">
+		<p><span>The address:</span>
+		<span>Chelsea Football Club
+		Stamford Bridge
+		Fulham Road
+		London
+		SW6 1HS</span></p>
+	</div>
+	<button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">View detailed information</button>
+	<hr>
+	<div uib-collapse="isCollapsed">
+		<div class="well well-lg">
+			<div class="general">				
+				<h3>General Club Information</h3>
+				Nickname : The Blues<br>
+				Formed : 1905<br>
+				Stadium Capacity : 41,663<br>
+				Pitch : 103 x 67 metres<br>
+			</div>
+			<div class="clearfix"></div>
+			<div class="personnel">
+				<div class="personnel-data" ng-repeat="personnel in contacts.personnel">
+					<div class="personnel-photo"><img ng-src="{{personnel.photo}}" title="{{personnel.name}}"></div>
+					<div class="full-name">{{personnel.name}}</div>
+					<div class="personnel-position">{{personnel.position}}</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
 </div>

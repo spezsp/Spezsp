@@ -1,7 +1,7 @@
 (function () {
 	"use strict";
 
-	angular.module("myApp", ["ui.router", "ngAnimate", "ui.bootstrap", "ui.bootstrap.carousel"])
+	angular.module("myApp", ["ui.router", "ngAnimate", "ui.bootstrap"])
 		.config(configApp);
 
 		configApp.$inject = ["$stateProvider", "$urlRouterProvider"];
@@ -29,7 +29,8 @@
 
 				.state("contacts", {
 					url: "/contacts",
-					templateUrl: "pages/contacts.html"
+					templateUrl: "pages/contacts.html",
+					controller:  "contactsController as contacts"
 				});
 	};
 })();
