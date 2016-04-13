@@ -20,7 +20,7 @@
 			</div>
 			<div class="clearfix"></div>
 			<div class="personnel">
-				<div class="personnel-data" ng-repeat="personnel in contacts.personnel">
+				<div class="personnel-data" ng-repeat="personnel in contacts.personnel" index="personnel.id">
 					<div class="personnel-photo"><img ng-src="{{personnel.photo}}" title="{{personnel.name}}"></div>
 					<div class="full-name">{{personnel.name}}</div>
 					<div class="personnel-position">{{personnel.position}}</div>

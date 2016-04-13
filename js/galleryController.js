@@ -2,14 +2,15 @@
 	"use strict";
 
 angular
-.module("myApp").controller("galleryController", function ($scope) {
-	$scope.myInterval = 3000;
-	$scope.noWrapSlides = false;
-	$scope.active = 0;
-	var slides = $scope.slides = [];
+.module("myApp").controller("galleryController", function () {
+	var vm = this;
+	vm.myInterval = 3000;
+	vm.noWrapSlides = false;
+	vm.active = 0;
+	var slides = vm.slides = [];
 	var currIndex = 0;
 
-	$scope.addSlide = function() {
+	vm.addSlide = function() {
 		slides.push({
 		image : "img/team_photo/img_"+slides.length+".jpg",
 		text : ["Gary Cahill","Thibaut Courtois","César Azpilicueta","Asmir Begovic","Baba Rahman","Kurt Zouma","John Terry","Branislav Ivanovic","Eden Hazard","Cesc Fàbregas","Nemanja Matic","John Mikel Obi","Oscar","Pedro","Willian","Kenedy","Diego Costa","Loïc Remy"][slides.length % 18],
@@ -18,7 +19,7 @@ angular
 	};
 
 	for (var i = 0; i < 18; i++) {
-		$scope.addSlide();
+		vm.addSlide();
 		}
 	});
 })();
