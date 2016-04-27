@@ -1,0 +1,12 @@
+.main-container {
+	width: 600px;
+	height: 900px;
+	border: 2px solid;
+	margin: auto;
+}
+.screen {
+	width: 90%;
+	heught: 30px;
+	border: 2px solid;
+	margin: auto;
+}
