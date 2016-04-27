@@ -1,0 +1,56 @@
+body {
+	background-color: #000000;
+}
+.main-container {
+	background-color: #F0F0F0;
+	width: 600px;
+	height: 900px;
+	margin: auto;
+	box-shadow: 0 4px 8px #FFF;
+	padding-top: 1px;
+}
+.screen {
+	width: 550px;
+	height: 60px;
+	margin: 40px auto;
+	border: 2px solid;
+}
+#editWide {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: none;
+	font-weight: 900;
+	font-size: 50px;
+	font-family: Verdana;
+	padding: 0 10px;
+}
+input {
+	border: 2px solid transparent; 
+	/*box-shadow: 20px 0 40px #000;*/
+	background-color: #CFC;
+	width: 50px;
+	height: 50px;
+	font-weight: 600;
+	font-size: 20px;
+	font-family: Verdana;
+	padding: 0 5px;
+}
+.clear, .digits, .signs {
+	border: 1px solid;/* */
+}
+.clear {
+	float: right;
+}
+.clear:after {
+	content: " ";
+	clear: both;
+	display: block;
+	height:0;
+}
+.digits , .signs{
+	float: left;
+}
+.digits {
+	width: 70%;
+}
